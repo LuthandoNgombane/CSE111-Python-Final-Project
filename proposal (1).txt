@@ -1,0 +1,78 @@
+
+CSE 111 Proposal for a Student Chosen Program
+(This is a proposal. All proposals are written with our best knowledge at the beginning of a project. 
+As we progress from the beginning to the end of a project, we gain more knowledge, 
+and we change some of our proposed ideas. This is part of completing any project and is fine. 
+However, we still must write a proposal so that our teachers or supervisors know what we intend to do. 
+Please answer each of the following questions to the best of your knowledge.)
+
+1. What is the title of your program?
+Data Manager: Fetch, Process, Store, and Organize
+
+2. What real-world problem will your program address or help to solve?
+
+Manually downloading, processing, and storing information can be time-consuming and is a common challenge for individuals and businesses.
+
+This program will provide a Graphical User Interface (GUI) that allows users to:
+
+- Retrieve data from an external API.
+- Process the data into a structured format for easy analysis.
+- Store the data in a MySQL database for future retrieval.
+- Organize and rename files in a specified directory to keep their system tidy.
+- Visualize the data using charts for better insights.
+- By automating these tasks, the program will help users save time, reduce manual errors, 
+and organize their files and data more efficiently.
+
+3. What will you learn from developing this program?
+
+Through developing this program, I will learn:
+
+- How to build a GUI using tkinter.
+- How to retrieve data from an API using the requests module.
+- How to store and retrieve data from a MySQL database using mysql.connector.
+- How to process and analyze data using pandas.
+- How to generate visual charts using matplotlib.
+- How to manipulate files and directories using os and shutil.
+- How to write reusable functions that follow good programming practices.
+- How to test Python functions using pytest.
+
+4. What Python modules will your program use?
+
+For the program I will use the following Python modules:
+
+- tkinter → To create the graphical user interface.
+- requests → To retrieve data from an external API.
+- pandas → To process and analyze data.
+- matplotlib → To visualize the data.
+- mysql.connector → To interact with a MySQL database.
+- os, shutil, and glob → To manage and organize files.
+- pytest → To test core functions of the program.
+
+5. List the names of functions you will need.
+I will divide the program into modular functions:
+
+Core Functions:
+- fetch_api_data(url: str) -> dict → Retrieves data from an API and returns it as a dictionary.
+- process_data(data: dict) -> pandas.DataFrame → Converts API data into a DataFrame.
+- store_data_in_mysql(data: pandas.DataFrame, table_name: str) → Stores processed data in MySQL.
+- retrieve_data_from_mysql(query: str) -> pandas.DataFrame → Fetches stored data from MySQL.
+- visualize_data(data: pandas.DataFrame) → Generates charts from the data.
+- rename_files(directory: str, pattern: str) → Renames files in a specified directory.
+- organize_files_by_type(directory: str) → Moves files into folders based on their file types.
+
+GUI Functions (for Tkinter usage):
+- setup_gui() → Initializes the main window and widgets.
+- on_fetch_data_click() → Calls fetch_api_data and displays results in the GUI.
+- on_process_data_click() → Calls process_data and updates the interface.
+- on_store_data_click() → Calls store_data_in_mysql to save data.
+- on_visualize_data_click() → Calls visualize_data to display charts.
+
+6. List the names of the test functions you will write.
+
+I will use the following test functions with pytest:
+
+- test_fetch_api_data() → Verifies that API data is retrieved correctly.
+- test_process_data() → Ensures the data is correctly converted into a Pandas DataFrame.
+- test_store_data_in_mysql() → Checks if data is correctly inserted into MySQL.
+- test_retrieve_data_from_mysql() → Ensures data retrieval from MySQL is correct.
+- test_rename_files() → Tests if files are renamed properly based on a given pattern.

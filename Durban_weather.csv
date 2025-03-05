@@ -1,0 +1,2 @@
+coord,weather,base,main,visibility,wind,clouds,dt,sys,timezone,id,name,cod
+"{'lon': 31.0292, 'lat': -29.8579}","[{'id': 801, 'main': 'Clouds', 'description': 'few clouds', 'icon': '02n'}]",stations,"{'temp': 73.06, 'feels_like': 74.19, 'temp_min': 73.06, 'temp_max': 73.06, 'pressure': 1014, 'humidity': 88, 'sea_level': 1014, 'grnd_level': 1012}",10000,"{'speed': 7.29, 'deg': 9, 'gust': 11.7}",{'all': 16},1740095262,"{'country': 'ZA', 'sunrise': 1740109276, 'sunset': 1740155885}",7200,1007311,Durban,200
